@@ -39,6 +39,7 @@ struct ContentView: View {
             .tint(.green)
             .fontWeight(.bold)
             .padding(.bottom, 20)
+            .disabled(isFetching)
             if (isFetching) {
                 ProgressView()
             } else if (idea != nil) {
